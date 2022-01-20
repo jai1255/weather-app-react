@@ -1,4 +1,3 @@
-import './App.css';
 import Container from '@mui/material/Container';
 import WeatherPage from './pages/Weather-page';
 

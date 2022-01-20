@@ -4,3 +4,7 @@ export const getWeatherIcon = (iconCode) => {
  export const convertkelvinToFarenheit = (k) => {
      return Math.round(((k - 273.15) * 1.8 ) + 32)
  }
+
+ export const convertWindToMiles = (k) => {
+    return Math.round(k*10);
+}

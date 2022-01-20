@@ -1,5 +1,5 @@
 import React from 'react';
-import { getWeatherIcon, convertkelvinToFarenheit } from '../utils/utils';
+import { getWeatherIcon, convertkelvinToFarenheit, convertWindToMiles } from '../utils/utils';
 
 const WeatherResult = ({response, cityNotFound}) => {
     return (
@@ -19,7 +19,8 @@ const WeatherResult = ({response, cityNotFound}) => {
                            <div className='top-margin color-white'>
                                <span className='side-margin'>Min: {convertkelvinToFarenheit(response.main?.temp_min)}&deg; F</span> | <span className='side-margin'>Max: {convertkelvinToFarenheit(response.main?.temp_max)}&deg; F</span>
                             </div>
-                            <span className='color-white' style={{fontWeight: '500'}}> {response.weather[0].main}</span>
+                            <p className='color-white' style={{fontWeight: '500'}}> {response.weather[0].main}</p>
+                            <div className='color-white'> Wind speed: {convertWindToMiles(response?.wind?.speed)} mph</div>
                     </div>
                 </div>
             </div>
