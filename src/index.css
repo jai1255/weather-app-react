@@ -1,13 +1,126 @@
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.app {
+  max-width: 782px;
+  margin: 0 auto;
+}
+
+.temp {
+  position:relative;
+  display:inline-block;
+  margin: 30px auto;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: rgb(230, 113, 113);
+  font-size: 102PX;
+  font-weight: 900;
+  /* text-shadow: 3px 6px rgba(50, 50, 70, 0.5); */
+}
+
+h1 {
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+/* Search bar styles */
+
+.search-box{
+  width: 100%;
+  position: relative;
+  display: flex;
+
+}
+.search-input{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #111d5e;
+  border-radius:10px 0 0 10px ;
+  border-right: none;
+  outline: none;
+  font-size: 16px;
+  background: none;
+}
+.search-button{
+  text-align: center;
+  height: 51px;
+  width: 40px;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #111d5e;
+  border-radius: 0 10px 10px 0 ;
+  border-left: none;
+  background: none;
+  font-size: 20px;
+  border-left: 2px solid #111d5e;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card-container {
+  margin-top: 32px;
+}
+
+.location {
+  font-weight: 300;
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: -16px;
+  color: #48484a;
+}
+
+.side-margin {
+  margin: 0 24px;
+}
+
+.color-white {
+  color: white;
+}
+
+.temp-element {
+  font-size: 56px;
+  color: white;
+}
+
+@media  screen and (max-width: 400px) {
+  .temp-element {
+    font-size: 46px;
+  }
+}
+
+.top-margin {
+  margin: -36px 0 15px 0;
+}
+
+.card-background {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  border-radius: 8px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 24px 9px 3px #000000; 
+  box-shadow: 0px 24px 9px 3px #000000;
+}
+
+.card-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  Justify-content: center;
+}
+
+.weather-icon {
+  width: 186px;
+  margin-bottom: 20px;
 }
