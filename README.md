@@ -1,8 +1,8 @@
 # Getting Started with Weather App
 
-![](assests/mobile-view.png)
-![](assests/desktop.png)
-![](assests/city-not-found.png)
+<img src="./src/assets/mobile-view.png" width="400" />
+<img src="./src/assets/desktop.png" width="500" />
+<img src="./src/assets/city-not-found.png" width="600" />
 
 ## Available Scripts
 
